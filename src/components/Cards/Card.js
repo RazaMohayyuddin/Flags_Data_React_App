@@ -108,7 +108,6 @@ const CountryCard = ({ name, population, region, capital, image }) => {
       <img src={image} alt={name} className="card-img-top" />
       <div className="card-body">
         <h3 className="card-title">
-          {" "}
           <span
             style={{
               fontWeight: "bold",
@@ -117,9 +116,9 @@ const CountryCard = ({ name, population, region, capital, image }) => {
             }}
           >
             {name}
-          </span>{" "}
+          </span>
         </h3>
-        <p className="card-text">
+        <p className="card-text" style={{ fontSize: "0.9rem" }}>
           <span
             style={{
               fontWeight: "bold",
@@ -131,7 +130,7 @@ const CountryCard = ({ name, population, region, capital, image }) => {
           </span>
           {population}
         </p>
-        <p className="card-text">
+        <p className="card-text" style={{ fontSize: "0.9rem" }}>
           <span
             style={{
               fontWeight: "bold",
@@ -143,7 +142,7 @@ const CountryCard = ({ name, population, region, capital, image }) => {
           </span>
           {region}
         </p>
-        <p className="card-text">
+        <p className="card-text" style={{ fontSize: "0.9rem" }}>
           <span
             style={{
               fontWeight: "bold",
