@@ -6,26 +6,61 @@
     background-color: hsl(0, 0%, 98%);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-
     h1 {
         font-size: 1.5rem;
         font-weight: 600;
         color: hsl(200, 15%, 8%);
-        margin-left: 3rem;
+        margin-left: 5.5rem;
     }
 
     span {
         font-size: 1rem;
         font-weight: 600;
         color: hsl(200, 15%, 8%);
-        margin-right: 3rem;
+        margin-right: 6rem;
 
         .icon {
             font-size: 1.5rem;
-            color: #000;
-            margin-bottom: -6px;
+            color: hsl(200, 15%, 8%);
+            margin-bottom: 8px;
         }
     }
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: row;
+
+        h1 {
+            margin-left: 1rem;
+            font-size: 1rem;
+        }
+
+        span {
+            margin-right: 1rem;
+            font-size: 1rem;
+
+            .icon {
+                font-size: 1.5rem;
+            }
+        }
+
+        // @media only screen and (max-width: 375px) {
+        //     .headerContainer {
+        //         flex-direction: row;
+        //         justify-content: center;
+        //         height: auto;
+
+        //         h1 {
+        //             margin: 2rem 0 1rem;
+        //             font-size: 1rem;
+        //         }
+
+        //         span {
+        //             margin: 1rem 0;
+        //         }
+        //     }
+        // }
+    }
+
 
 
 }
