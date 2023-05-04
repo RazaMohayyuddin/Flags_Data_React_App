@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../Header/Header";
 import SearchFilter from "../Search/SearchFilter";
 import "./home.scss";
 import CountryCardGrid from "../Cards/CountryCardGrid";
 import countries from "../Cards/cardData.json";
+import Header from "../Header/Header";
 const Home = () => {
   return (
     <section className="home-container">

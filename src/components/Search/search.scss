@@ -21,11 +21,18 @@
     width: 35%;
     box-shadow: 0 2px 4px rgba(105, 102, 102, 0.2);
     border-radius: 4px;
-    margin-right: 28.5rem;
+    margin-right: 30rem;
+
+    @media screen and (max-width:1281) {
+
+        margin-right: 5rem;
+    }
 
     @media only screen and (max-width: 960px) {
 
         margin-right: 10.5rem;
+
+
     }
 
     @media only screen and (max-width: 769px) {
@@ -33,6 +40,8 @@
         margin-bottom: 1.5rem;
         margin-left: 9rem;
     }
+
+
 }
 
 .search .icon {
@@ -92,7 +101,7 @@
 
 @media screen and (max-width: 1040px) {
     .filter {
-        margin-right: 3.5rem;
+        margin-right: 4rem;
     }
 }
 
