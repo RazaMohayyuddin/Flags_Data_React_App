@@ -1,6 +1,7 @@
 .countryContainer {
     width: 100%;
     background-color: hsl(0, 0%, 98%);
+    height: fit-content;
 
     .backBtn {
         margin-top: 2rem;
@@ -136,7 +137,7 @@
                     }
 
                     .borderCountry {
-                        margin-bottom: 0.5rem;
+                        margin-bottom: 0.3rem;
                         padding: 0.5rem 1rem;
                         border-radius: 5px;
                         border: none;
