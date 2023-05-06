@@ -1,0 +1,97 @@
+.app.dark {
+    background-color: #111;
+    color: rgb(156, 156, 156);
+
+    .headerContainer {
+        background-color: #333;
+        box-shadow: 0 4px 8px rgba(127, 116, 116, 0.1);
+
+        h1 {
+            color: #999;
+        }
+
+        span {
+            color: #999;
+
+            .icon {
+                color: #999;
+            }
+        }
+    }
+
+    .home-container {
+        background-color: #333;
+    }
+
+    .search {
+        background-color: #333;
+        box-shadow: 0 6px 10px rgba(132, 127, 127, 0.2);
+    }
+
+    .filter select {
+        background-color: #333;
+        color: #999;
+        box-shadow: 0 12px 14px rgba(209, 195, 195, 0.1);
+
+        option {
+            background-color: #333;
+            color: #999;
+        }
+    }
+
+    .card {
+        background-color: #333;
+        color: #999;
+        box-shadow: 0 12px 14px rgba(209, 195, 195, 0.1);
+
+
+    }
+
+    .countryContainer {
+        background-color: #333;
+        color: #999;
+        box-shadow: 0 12px 14px rgba(209, 195, 195, 0.1);
+
+        .backBtn {
+            background-color: #333;
+            color: #999;
+            box-shadow: 0 12px 14px rgba(209, 195, 195, 0.1);
+        }
+
+        .countryInfo {
+            h2 {
+                color: #999;
+            }
+
+            .countryInfoLeft {
+                p {
+                    color: #999;
+                }
+            }
+
+            .countryInfoRight {
+                p {
+                    color: #999;
+                }
+            }
+
+            .countryBorder {
+                p {
+                    color: #999;
+                }
+
+                .borderCountry {
+                    background-color: #333;
+                    color: #999;
+                    box-shadow: 0 12px 14px rgba(209, 195, 195, 0.1);
+                }
+            }
+        }
+
+    }
+
+    input {
+        background-color: transparent;
+        color: #999;
+    }
+}

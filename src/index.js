@@ -5,12 +5,16 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import { FilterContextProvider } from "./FilterContext/FilterContext";
+import { DarkModeContextProvider } from "./StyleContext/darkModeContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <DarkModeContextProvider>
+    <FilterContextProvider>
+      <App />
+    </FilterContextProvider>
+  </DarkModeContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
