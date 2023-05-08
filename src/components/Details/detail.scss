@@ -1,7 +1,7 @@
 .countryContainer {
     width: 100%;
     background-color: hsl(0, 0%, 98%);
-    height: fit-content;
+    height: 100%;
 
     .backBtn {
         margin-top: 2rem;
@@ -10,7 +10,7 @@
         padding: 0.5rem 2rem;
         border-radius: 5px;
         border: none;
-        background-color: hsl(0, 0%, 98%);
+        background-color: hsl(0, 0%, 100%);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         cursor: pointer;
         transition: all 0.3s ease-in-out;
@@ -52,6 +52,10 @@
         .countryInfo {
             flex: 1;
             margin-bottom: 9rem;
+            position: relative;
+
+
+
 
             h2 {
                 font-size: 1.5rem;
@@ -119,8 +123,11 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: flex-start;
                 margin-bottom: 1rem;
+                position: absolute;
+
+
 
                 p {
                     font-size: 0.8rem;
@@ -141,7 +148,7 @@
                         padding: 0.5rem 1rem;
                         border-radius: 5px;
                         border: none;
-                        background-color: hsl(0, 0%, 98%);
+                        background-color: hsl(0, 0%, 100%);
                         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
                         cursor: pointer;
                         transition: all 0.3s ease-in-out;
@@ -197,13 +204,13 @@
                 flex-direction: column;
 
                 h2 {
-                    margin-right: 52rem;
+                    margin-right: 48rem;
 
                     @media screen and (max-width: 912px) {
-                        margin-right: 46rem;
+                        margin-right: 42rem;
 
                         @media screen and (max-width: 821px) {
-                            margin-right: 41rem;
+                            margin-right: 39rem;
 
                         }
 
@@ -216,14 +223,14 @@
                     flex-direction: row;
 
                     .countryInfoLeft {
-                        margin-right: 20rem;
+                        margin-right: 26rem;
                         margin-top: 0;
 
                         @media screen and (max-width: 912px) {
-                            margin-right: 15rem;
+                            margin-right: 20rem;
 
                             @media screen and (max-width: 821px) {
-                                margin-right: 11rem;
+                                margin-right: 15.5rem;
 
                             }
 
@@ -237,6 +244,8 @@
                 }
 
                 .countryBorder {
+                    position: relative;
+
                     p {
                         margin-left: 6.5rem;
 
@@ -345,7 +354,7 @@
                 margin-right: 5rem;
                 margin-bottom: 4rem;
                 width: 90%;
-                height: 90%;
+                height: 100%;
 
 
                 .countryFlagImage {
@@ -360,16 +369,21 @@
                 flex-direction: column;
 
                 h2 {
-                    margin-right: 26.8rem;
+                    margin-right: 27.8rem;
 
                     @media screen and (max-width: 450px) {
-                        margin-right: 19.5rem;
+                        margin-right: 20rem;
 
                         @media screen and (max-width: 395px) {
-                            margin-right: 18rem;
+                            margin-right: 19rem;
 
                             @media screen and (max-width: 376px) {
-                                margin-right: 17rem;
+                                margin-right: 17.9rem;
+
+                                @media screen and (max-width: 361px) {
+                                    margin-right: 17.4rem;
+                                }
+
                             }
                         }
                     }

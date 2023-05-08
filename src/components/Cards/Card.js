@@ -15,50 +15,38 @@ const CountryCard = ({ country }) => {
         />
         <div className="card-body">
           <h3 className="card-title">
-            <span
-              style={{
-                fontWeight: "bold",
-                color: "hsl(200,15%,8%)",
-                paddingRight: "15px",
-              }}
-            >
+            <strong style={{ fontWeight: "bolder" }}>
               {country.name.common}
-            </span>
+            </strong>
           </h3>
           <p className="card-text" style={{ fontSize: "0.9rem" }}>
-            <span
+            <strong
               style={{
-                fontWeight: "bold",
-                color: "hsl(200,15%,8%)",
-                paddingRight: "5px",
+                marginRight: "5px",
               }}
             >
               Population:
-            </span>
+            </strong>
             {country.population}
           </p>
           <p className="card-text" style={{ fontSize: "0.9rem" }}>
-            <span
+            <strong
               style={{
-                fontWeight: "bold",
-                color: "hsl(200,15%,8%)",
-                paddingRight: "5px",
+                marginRight: "5px",
               }}
             >
               Region:
-            </span>
+            </strong>
             {country.region}
           </p>
           <p className="card-text" style={{ fontSize: "0.9rem" }}>
-            <span
+            <strong
               style={{
-                fontWeight: "bold",
-                color: "hsl(200,15%,8%)",
-                paddingRight: "5px",
+                marginRight: "5px",
               }}
             >
               Capital:
-            </span>
+            </strong>
             {country.capital}
           </p>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import "./detail.scss";
 import Header from "../Header/Header";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -87,9 +87,19 @@ const SingleCountryDetail = () => {
           </div>
           <div className="countryBorder">
             <p>
-              <span>Border Countries:</span>
+              {borderCountries.length > 0 && <span>Border Countries:</span>}
+
               {borderCountries.map((border) => (
-                <span className="borderCountry">{border[0]?.name?.common}</span>
+                <Link
+                  to={`/country/${border[0]?.name?.common}`}
+                  state={border[0]}
+                  key={border[0]?.name?.common}
+                  style={{ textDecoration: "none" }}
+                >
+                  <span className="borderCountry" key={border[0]?.name?.common}>
+                    {border[0]?.name?.common}
+                  </span>
+                </Link>
               ))}
             </p>
           </div>
