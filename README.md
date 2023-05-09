@@ -1,7 +1,10 @@
 # Flags-Data-App
+This project is based on Flag Listing. All Data came from API. Also Filters are implemented like search filter and filter by region. Each filter has its own functionality search filter used to search country and other filter used to see the list of countries that lies in that region. Also light and Dark mode implemented in this app. Detail 
+Page show detail of each country like population,currencies,languages and many more.
 
 ## Get Started
 ![Design preview Of The App](./Design/desktop-preview.jpg)
+![Design preview detail Page](./Design/desktop-design-detail-light.jpg)
 
 ## How to Run
 
