@@ -1,8 +1,7 @@
 # Flags-Data-App
 
-
 ## Get Started
-
+![Design preview Of The App](./Design/desktop-preview.jpg)
 Node Version Used In This project is 
 ## Node@v18.16.0 
 clone this repo in your local using
