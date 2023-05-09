@@ -2,21 +2,25 @@
 
 ## Get Started
 ![Design preview Of The App](./Design/desktop-preview.jpg)
-Node Version Used In This project is 
-## Node@v18.16.0 
-clone this repo in your local using
-### `git clone https://github.com/RazaMohayyuddin/Flags_Data_React_App.git`
-After that navigate to this repo and run below command to download dev dependencies
 
-### `npm install`
+## How to Run
 
-After that when All Dev Dependencies Install Run below command in terminal or command prompt
+- Clone the repository
+- Run "npm install"
+- Run "npm start"
+## Dependencies
 
-### `npm start`
+- react : 18.2.0
+- react-dom : 18.2.0
+- react-scripts : 5.0.1
+- sass : 1.62.1
+- web-vitals : 2.1.4
+- axios : 1.4.0
+- react-icons : 4.8.0
+- node : 18.16.0
 
-After Running above command go to 
-
-### `http://localhost:3000`
+## Go to localhost
+### `http://localhost:3000/`
 
 Congratulations!
 
