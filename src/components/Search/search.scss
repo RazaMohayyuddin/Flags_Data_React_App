@@ -2,12 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 8vh;
     margin-bottom: 2rem;
     margin-top: 3rem;
 
     @media only screen and (max-width: 768px) {
-        height: 12vh;
         flex-direction: column;
         justify-content: center;
     }
@@ -21,7 +19,8 @@
     width: 35%;
     box-shadow: 0 2px 4px rgba(105, 102, 102, 0.2);
     border-radius: 4px;
-    margin-right: 35rem;
+    // margin-right: 35rem;
+    margin-left: 3rem;
 
     @media only screen and (max-width: 1280px) {
         margin-right: 25rem;
@@ -54,7 +53,7 @@
     outline: none;
     background-color: transparent;
     margin-right: 1.5rem;
-    font-size: 13px;
+    font-size: 14px;
     color: hsl(0, 0%, 52%);
     flex: 1;
 
@@ -71,93 +70,67 @@
     color: hsl(0, 0%, 52%);
 }
 
-.filter {
+.select-container {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-right: 3rem;
-    padding: 10px;
-}
-
-.filter select {
-    border: none;
-    outline: none;
-    font-size: 16px;
-    padding: 12px;
-    background-color: hsl(0, 0%, 100%);
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: hsl(200, 15%, 8%);
-}
-
-.filter option {
-    font-size: 12px;
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(0, 1%, 28%);
-    border: none;
-    font-weight: 400;
+    justify-content: center;
+    position: relative;
+    min-width: 200px;
+    height: 50px;
+    margin-right: 5rem;
 }
 
 @media screen and (max-width: 1280px) {
-    .filter {
-        margin-right: 5rem;
+    .select-container {
+        margin-right: 2.2rem;
     }
 }
 
 @media screen and (max-width: 1040px) {
-    .filter {
+    .select-container {
         margin-right: 4rem;
 
         @media screen and (max-width: 1025px) {
-            margin-left: 6rem;
+            margin-left: 3.2rem;
         }
 
         @media screen and (max-width: 913px) {
-            margin-right: 5rem;
+            margin-right: 2rem;
         }
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .filter {
+    .select-container {
         margin-right: 30.5rem;
-        margin-left: -4rem;
+        margin-left: -3.5rem;
+        margin-top: 1rem;
+
     }
 
-    .filter select {
-        // font-size: 12px;
-        padding-left: 16px;
-        padding-right: 18px;
-    }
-
-    .filter option {
-        font-size: 10px;
-        width: max-content;
-    }
 
     @media screen and (min-width: 426px) and (max-width: 540px) {
-        .filter {
-            margin-right: 17.5rem;
+        .select-container {
+            margin-right: 17rem;
         }
     }
 
     @media only screen and (max-width: 425px) {
-        .filter {
-            margin-right: 9.5rem;
+        .select-container {
+            margin-right: 9.8rem;
+            width: 250px;
 
             @media screen and (max-width: 394px) {
-                margin-left: -44px;
+                margin-left: -38px;
             }
 
             @media screen and (max-width: 390px) {
-                margin-left: -40px;
+                margin-left: -36px;
 
                 @media only screen and (max-width: 376px) {
-                    margin-left: -34px;
+                    margin-left: -20px;
 
                     @media screen and (max-width: 361px) {
-                        margin-left: -22px;
+                        margin-left: -5px;
 
                         @media screen and (max-width: 321px) {
                             margin-left: 20px;

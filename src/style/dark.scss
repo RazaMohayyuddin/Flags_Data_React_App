@@ -40,16 +40,26 @@
         }
     }
 
-
-    .filter select {
+    .dropdown-trigger {
         background-color: hsl(209, 23%, 22%);
         color: hsl(0, 0%, 100%);
 
-        option {
-            background-color: hsl(209, 23%, 22%);
+        .dropdown-icon {
             color: hsl(0, 0%, 100%);
         }
+
     }
+
+    .dropdown-option {
+        background-color: hsl(209, 23%, 22%);
+        color: hsl(0, 0%, 100%);
+
+        &:hover {
+            background-color: hsl(0, 0%, 100%);
+            color: hsl(209, 23%, 22%);
+        }
+    }
+
 
     .card {
         background-color: hsl(209, 23%, 22%);

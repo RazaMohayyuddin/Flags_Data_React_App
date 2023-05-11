@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./card.scss";
 
 const CountryCard = ({ country }) => {
   return (
@@ -14,12 +15,12 @@ const CountryCard = ({ country }) => {
           className="card-img-top"
         />
         <div className="card-body">
-          <h3 className="card-title">
+          <h3>
             <strong style={{ fontWeight: "bolder" }}>
               {country.name.common}
             </strong>
           </h3>
-          <p className="card-text" style={{ fontSize: "0.9rem" }}>
+          <p style={{ fontSize: "0.9rem" }}>
             <strong
               style={{
                 marginRight: "5px",
@@ -29,7 +30,7 @@ const CountryCard = ({ country }) => {
             </strong>
             {country.population}
           </p>
-          <p className="card-text" style={{ fontSize: "0.9rem" }}>
+          <p style={{ fontSize: "0.9rem" }}>
             <strong
               style={{
                 marginRight: "5px",
@@ -39,7 +40,7 @@ const CountryCard = ({ country }) => {
             </strong>
             {country.region}
           </p>
-          <p className="card-text" style={{ fontSize: "0.9rem" }}>
+          <p style={{ fontSize: "0.9rem" }}>
             <strong
               style={{
                 marginRight: "5px",
