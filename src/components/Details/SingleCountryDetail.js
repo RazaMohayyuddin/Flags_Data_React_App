@@ -27,85 +27,94 @@ const SingleCountryDetail = () => {
   }, [data.state.borders]);
 
   return (
-    <div className="countryContainer">
+    <>
       <Header />
-      <button className="backBtn" onClick={() => navigate("/")}>
-        <MdOutlineKeyboardBackspace className="icon" />
-        Back
-      </button>
+      <div className="countryContainer">
+        <button className="backBtn" onClick={() => navigate("/")}>
+          <MdOutlineKeyboardBackspace className="icon" />
+          Back
+        </button>
 
-      <div className="countryDetails">
-        <div className="countryFlag">
-          <img
-            src={data.state.flags.png}
-            alt="country"
-            className="countryFlagImage"
-          />
-        </div>
-        <div className="countryInfo">
-          <h2>{data.state.name.common}</h2>
-          <div className="countryInfoDetails">
-            <div className="countryInfoLeft">
-              <p className="">
-                <span>Native Name:</span>{" "}
-                {Object.entries(data.state.name.nativeName)
-                  .slice(0, 1)
-                  .map(([key, value], index) => {
-                    const nativeName = `${value.common}`;
-                    return index === 0 ? nativeName : `, ${nativeName}`;
-                  })}
-              </p>
-
-              <p>
-                <span>Population:</span> {data.state.population}
-              </p>
-              <p>
-                <span>Region:</span> {data.state.region}
-              </p>
-              <p>
-                <span>Sub Region:</span> {data.state.subregion}
-              </p>
-              <p>
-                <span>Capital:</span> {data.state.capital}
-              </p>
-            </div>
-            <div className="countryInfoRight">
-              <p>
-                <span>Top Level Domain:</span> {data.state.tld}
-              </p>
-              <p>
-                <span>Currencies:</span>{" "}
-                {Object.values(data.state.currencies)
-                  .map((currency) => currency.name)
-                  .join(", ")}
-              </p>
-              <p>
-                <span>Languages:</span>{" "}
-                {Object.values(data.state.languages).join(", ")}
-              </p>
-            </div>
+        <div className="countryDetails">
+          <div className="countryFlag">
+            <img
+              src={data.state.flags.png}
+              alt="country"
+              className="countryFlagImage"
+            />
           </div>
-          <div className="countryBorder">
-            <p>
-              {borderCountries.length > 0 && <span>Border Countries:</span>}
+          <div className="countryInfo">
+            <h2>{data.state.name.common}</h2>
+            <div className="countryInfoDetails">
+              <div className="countryInfoLeft">
+                <p className="">
+                  <span>Native Name:</span>{" "}
+                  {Object.entries(data.state.name.nativeName)
+                    .slice(0, 1)
+                    .map(([key, value], index) => {
+                      const nativeName = `${value.common}`;
+                      return index === 0 ? nativeName : `, ${nativeName}`;
+                    })}
+                </p>
 
-              {borderCountries.map((border) => (
-                <Link
-                  to={`/country/${border[0]?.name?.common}`}
-                  state={border[0]}
-                  key={border[0]?.name?.common}
-                  style={{ textDecoration: "none" }}
-                >
-                  <span className="borderCountry" key={border[0]?.name?.common}>
-                    {border[0]?.name?.common}
-                  </span>
-                </Link>
-              ))}
-            </p>
+                <p>
+                  <span>Population:</span> {data.state.population}
+                </p>
+                <p>
+                  <span>Region:</span> {data.state.region}
+                </p>
+                <p>
+                  <span>Sub Region:</span> {data.state.subregion}
+                </p>
+                <p>
+                  <span>Capital:</span> {data.state.capital}
+                </p>
+              </div>
+              <div className="countryInfoRight">
+                <p>
+                  <span>Top Level Domain:</span> {data.state.tld}
+                </p>
+                <p>
+                  <span>Currencies:</span>{" "}
+                  {Object.values(data.state.currencies)
+                    .map((currency) => currency.name)
+                    .join(", ")}
+                </p>
+                <p>
+                  <span>Languages:</span>{" "}
+                  {Object.values(data.state.languages).join(", ")}
+                </p>
+              </div>
+            </div>
+            <div className="countryBorder">
+              <p>
+                {borderCountries.length > 0 && <span>Border Countries:</span>}
+
+                {borderCountries
+                  .sort((a, b) =>
+                    a[0]?.name?.common.localeCompare(b[0]?.name?.common)
+                  )
+                  .map((border) => (
+                    <Link
+                      to={`/country/${border[0]?.name?.common}`}
+                      state={border[0]}
+                      key={border[0]?.name?.common}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <span
+                        className="borderCountry"
+                        key={border[0]?.name?.common}
+                      >
+                        {border[0]?.name?.common}
+                      </span>
+                    </Link>
+                  ))}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -7,22 +7,23 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 16px;
         font-weight: bold;
         color: hsl(200, 15%, 8%);
-        margin-left: 3.9rem;
+        margin-left: 3rem;
     }
 
     span {
-        font-size: 1rem;
-        font-weight: 600;
+        font-size: 16px;
+        font-weight: 300;
         color: hsl(200, 15%, 8%);
-        margin-right: 4rem;
+        margin-right: 3rem;
 
         .icon {
-            font-size: 1.5rem;
+            font-size: 16px;
             color: hsl(200, 15%, 8%);
-            margin-bottom: 8px;
+            margin-bottom: -2px;
+            margin-right: 4px;
         }
     }
 
@@ -31,34 +32,19 @@
 
         h1 {
             margin-left: 1rem;
-            font-size: 1rem;
+            font-size: 14px;
         }
 
         span {
             margin-right: 1rem;
-            font-size: 1rem;
+            font-size: 14px;
 
             .icon {
-                font-size: 1.5rem;
+                font-size: 14px;
             }
         }
 
-        // @media only screen and (max-width: 375px) {
-        //     .headerContainer {
-        //         flex-direction: row;
-        //         justify-content: center;
-        //         height: auto;
 
-        //         h1 {
-        //             margin: 2rem 0 1rem;
-        //             font-size: 1rem;
-        //         }
-
-        //         span {
-        //             margin: 1rem 0;
-        //         }
-        //     }
-        // }
     }
 
 
