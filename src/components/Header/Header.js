@@ -17,10 +17,11 @@ const Header = () => {
       >
         {darkMode ? (
           <MdDarkMode className="icon" />
+         
         ) : (
           <MdOutlineDarkMode className="icon" />
         )}
-        Dark Mode
+        {darkMode ? "Light Mode" : "Dark Mode"}
       </span>
     </div>
   );

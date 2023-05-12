@@ -1,7 +1,6 @@
 import React from "react";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import "./detail.scss";
-import Header from "../Header/Header";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -28,8 +27,9 @@ const SingleCountryDetail = () => {
 
   return (
     <>
-      <Header />
+    
       <div className="countryContainer">
+     
         <button className="backBtn" onClick={() => navigate("/")}>
           <MdOutlineKeyboardBackspace className="icon" />
           Back
@@ -82,7 +82,7 @@ const SingleCountryDetail = () => {
                 </p>
                 <p>
                   <span>Languages:</span>{" "}
-                  {Object.values(data.state.languages).join(", ")}
+                  {Object.values(data.state.languages).sort().join(", ")}
                 </p>
               </div>
             </div>
