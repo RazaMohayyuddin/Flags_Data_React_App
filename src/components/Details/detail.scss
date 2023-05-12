@@ -1,344 +1,338 @@
 .countryContainer {
-    background-color: hsl(0, 0%, 98%);
-    // padding: 0 2rem;
+  background-color: hsl(0, 0%, 98%);
+  // padding: 0 2rem;
 
-    .backBtn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 3rem;
-        margin-left: 3.5rem;
-        margin-bottom: 4rem;
-        padding: 0.5rem 2rem;
-        border-radius: 5px;
-        border: none;
-        background-color: hsl(0, 0%, 100%);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        color: hsl(200, 15%, 8%);
-        font-size: 16px;
+  .backBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 3.3rem;
+    margin-bottom: 4rem;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: hsl(200, 15%, 8%);
+    font-size: 16px;
 
-        &:hover {
-            transform: scale(1.1);
-        }
-
-        .icon {
-            margin-right: 0.5rem;
-            font-size: 16;
-
-        }
+    &:hover {
+      transform: scale(1.1);
     }
 
-    .countryDetails {
+    .icon {
+      margin-right: 0.5rem;
+      font-size: 16;
+    }
+  }
+
+  .countryDetails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem;
+
+    .countryFlag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      .countryFlagImage {
+        width: 510px;
+        height: 320px;
+        object-fit: cover;
+        margin-bottom: 10rem;
+        margin-right: 3.5rem;
+      }
+    }
+
+    .countryInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h2 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        color: hsl(200, 15%, 8%);
+      }
+
+      .countryInfoDetails {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
-        margin-top: 2rem;
 
-        .countryFlag {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 2rem;
+        grid-gap: 3rem;
 
-            .countryFlagImage {
-                width: 500px;
-                height: 320px;
-                object-fit: cover;
-                margin-bottom: 10rem;
+        .countryInfoLeft {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-bottom: 2rem;
+
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            color: hsl(200, 15%, 8%);
+            margin-bottom: 0.5rem;
+            padding: 1px;
+
+            span {
+              font-weight: 700;
+              font-size: 16px;
+              padding: 2px;
             }
+          }
         }
 
-        .countryInfo {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            // align-items: flex-start;
+        .countryInfoRight {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-bottom: 7rem;
 
-            h2 {
-                font-size: 16px;
-                font-weight: bold;
-                margin-bottom: 1rem;
-                margin-top: 2rem;
-                color: hsl(200, 15%, 8%);
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            color: hsl(200, 15%, 8%);
+            margin-bottom: 0.5rem;
+            padding: 1px;
+
+            span {
+              font-weight: 700;
+              font-size: 16px;
+              padding: 2px;
             }
-
-            .countryInfoDetails {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-
-                grid-gap: 3rem;
-
-                .countryInfoLeft {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                    margin-bottom: 2rem;
-
-                    p {
-                        font-size: 16px;
-                        font-weight: 400;
-                        color: hsl(200, 15%, 8%);
-                        margin-bottom: 0.5rem;
-                        padding: 1px;
-
-                        span {
-                            font-weight: 700;
-                            font-size: 16px;
-                            padding: 2px;
-
-                        }
-                    }
-                }
-
-                .countryInfoRight {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                    margin-bottom: 7rem;
-
-                    p {
-                        font-size: 16px;
-                        font-weight: 400;
-                        color: hsl(200, 15%, 8%);
-                        margin-bottom: 0.5rem;
-                        padding: 1px;
-
-                        span {
-                            font-weight: 700;
-                            font-size: 16px;
-                            padding: 2px;
-
-                        }
-                    }
-                }
-
-            }
-
-            .countryBorder {
-
-                margin-bottom: 8rem;
-                margin-right: 10px;
-
-                p {
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    flex-direction: row;
-                    gap: 1rem;
-                    font-size: 16px;
-                    color: hsl(200, 15%, 8%);
-                    margin-right: 0.5rem;
-
-                    span {
-                        font-weight: 700;
-                        font-size: 16px;
-                        margin-right: 0.5rem;
-                    }
-
-                    .borderCountry {
-
-                        padding: 0.5rem 1rem;
-                        border-radius: 5px;
-                        border: none;
-                        background-color: hsl(0, 0%, 100%);
-                        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-                        cursor: pointer;
-                        transition: all 0.3s ease-in-out;
-                        color: hsl(200, 15%, 8%);
-                        font-size: 14px;
-                        font-weight: normal;
-                        margin-right: 0.5rem;
-
-                        &:hover {
-                            transform: scale(1.1);
-                        }
-                    }
-                }
-
-            }
+          }
         }
+      }
+
+      .countryBorder {
+        margin-bottom: 8rem;
+        margin-right: 10px;
+
+        p {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          flex-direction: row;
+          gap: 1rem;
+          font-size: 16px;
+          color: hsl(200, 15%, 8%);
+          margin-right: 0.5rem;
+
+          span {
+            font-weight: 700;
+            font-size: 16px;
+            margin-right: 0.5rem;
+          }
+
+          .borderCountry {
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            border: none;
+            background-color: hsl(0, 0%, 100%);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            color: hsl(200, 15%, 8%);
+            font-size: 14px;
+            font-weight: normal;
+            margin-right: -0.5rem;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
     }
-
-
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .countryContainer {
-        padding: 0 2rem;
+  .countryContainer {
+    padding: 0 2rem;
 
-        .backBtn {
-            margin-left: 1rem;
-        }
-
-        .countryDetails {
-            .countryFlag {
-                margin-bottom: 1rem;
-
-                .countryFlagImage {
-                    width: 430px;
-                    height: 300px;
-                    object-fit: cover;
-
-
-                }
-            }
-
-            .countryInfo {
-                h2 {
-                    font-size: 16px;
-                    margin-top: 1rem;
-                    margin-bottom: 1rem;
-                    margin-left: 1rem;
-                }
-
-                .countryInfoDetails {
-                    .countryInfoLeft {
-                        margin-left: 1rem;
-                    }
-
-                    .countryInfoRight {
-                        margin-left: 1rem;
-                    }
-
-
-                }
-
-                .countryBorder {
-                    margin-right: 0.5rem;
-
-
-                    p {
-                        margin-left: 1rem;
-                        padding-right: 20px;
-
-                        span {
-                            margin-left: 0px;
-                            margin-right: 20px;
-                        }
-                    }
-                }
-
-            }
-        }
+    .backBtn {
+      margin-left: 1rem;
     }
+
+    .countryDetails {
+      .countryFlag {
+        margin-bottom: 1rem;
+
+        .countryFlagImage {
+          width: 430px;
+          height: 300px;
+          object-fit: cover;
+          margin-left: 1rem;
+        }
+      }
+
+      .countryInfo {
+        h2 {
+          font-size: 16px;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          margin-left: 1rem;
+        }
+
+        .countryInfoDetails {
+          .countryInfoLeft {
+            margin-left: 1rem;
+          }
+
+          .countryInfoRight {
+            margin-left: 1rem;
+          }
+        }
+
+        .countryBorder {
+          margin-right: 0.5rem;
+
+          p {
+            margin-left: 1rem;
+            padding-right: 20px;
+
+            span {
+              margin-left: 0px;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 913px) {
-    .countryContainer {
-        padding: 0 2rem;
+  .countryContainer {
+    padding: 0 2rem;
 
-        .backBtn {
-            margin-left: 0.5rem;
-        }
-
-        .countryDetails {
-            grid-template-columns: 1fr;
-
-            .countryFlag {
-                margin-bottom: 1rem;
-
-                .countryFlagImage {
-                    width: 97%;
-                    height: 80%;
-                    object-fit: cover;
-                }
-            }
-
-            .countryInfo {
-                margin-top: -4rem;
-
-                h2 {
-                    font-size: 16px;
-                    margin-top: 1rem;
-                    margin-bottom: 1.5rem;
-                    margin-left: 1rem;
-                }
-
-                .countryInfoDetails {
-                    grid-template-columns: 1fr;
-
-                    .countryInfoLeft {
-                        margin-left: 1rem;
-                    }
-
-                    .countryInfoRight {
-                        margin-left: 1rem;
-                    }
-                }
-
-                .countryBorder {
-                    margin-right: 0.5rem;
-
-                    p {
-                        margin-left: 1rem;
-                        padding-right: 20px;
-
-                        span {
-                            margin-left: 0px;
-                            margin-right: 20px;
-                        }
-                    }
-                }
-            }
-        }
+    .backBtn {
+      margin-left: 0.5rem;
     }
+
+    .countryDetails {
+      grid-template-columns: 1fr;
+
+      .countryFlag {
+        margin-bottom: 1rem;
+
+        .countryFlagImage {
+          width: 97%;
+          height: 80%;
+          object-fit: cover;
+          margin-left: 2.5rem;
+        }
+      }
+
+      .countryInfo {
+        margin-top: -4rem;
+
+        h2 {
+          font-size: 16px;
+          margin-top: 1rem;
+          margin-bottom: 1.5rem;
+          margin-left: 1rem;
+        }
+
+        .countryInfoDetails {
+          grid-template-columns: 1fr;
+
+          .countryInfoLeft {
+            margin-left: 1rem;
+          }
+
+          .countryInfoRight {
+            margin-left: 1rem;
+          }
+        }
+
+        .countryBorder {
+          margin-right: 0.5rem;
+
+          p {
+            margin-left: 1rem;
+            padding-right: 20px;
+
+            span {
+              margin-left: 0px;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-
 @media screen and (max-width: 768px) {
-    .countryContainer {
-        padding: 0 2rem;
+  .countryContainer {
+    padding: 0 2rem;
 
-        .backBtn {
-            margin-left: 0rem;
-        }
-
-        .countryDetails {
-            grid-template-columns: 1fr;
-            grid-gap: 1rem;
-
-            .countryFlag {
-                margin-top: 2rem;
-                margin-bottom: -1rem;
-
-                .countryFlagImage {
-                    width: 98%;
-                    height: 80%;
-                }
-            }
-
-            .countryInfo {
-                align-items: left;
-                text-align: left;
-                margin-bottom: 2rem;
-
-                h2 {
-                    font-size: 16px;
-                    margin-top: 1rem;
-                    margin-left: 0.5rem;
-                    margin-bottom: 2rem;
-                }
-
-                .countryInfoDetails {
-                    grid-template-columns: 1fr;
-
-                    .countryInfoLeft {
-                        margin-left: 0.5rem;
-                        margin-bottom: 0rem;
-                    }
-
-                    .countryInfoRight {
-                        margin-left: 0.5rem;
-                        margin-bottom: 2.5rem;
-                    }
-
-                }
-            }
-        }
+    .backBtn {
+      margin-left: -1rem;
     }
+
+    .countryDetails {
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+
+      .countryFlag {
+        margin-top: 2rem;
+        margin-bottom: -1rem;
+
+        .countryFlagImage {
+          width: 100%;
+          height: 72%;
+          margin-left: -1rem;
+          @media screen and (max-width: 540px) {
+            width: 110%;
+            margin-left: 1rem;
+            @media screen and (max-width: 414px) {
+              margin-left: 3.5rem;
+            }
+          }
+        }
+      }
+
+      .countryInfo {
+        align-items: left;
+        text-align: left;
+        margin-bottom: 2rem;
+        margin-left: -1rem;
+
+        h2 {
+          font-size: 16px;
+          margin-top: 1rem;
+          margin-left: 0.5rem;
+          margin-bottom: 2rem;
+        }
+
+        .countryInfoDetails {
+          grid-template-columns: 1fr;
+
+          .countryInfoLeft {
+            margin-left: 0.5rem;
+            margin-bottom: 0rem;
+          }
+
+          .countryInfoRight {
+            margin-left: 0.5rem;
+            margin-bottom: 2.5rem;
+          }
+        }
+      }
+    }
+  }
 }

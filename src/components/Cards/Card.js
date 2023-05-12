@@ -10,7 +10,7 @@ const CountryCard = ({ country }) => {
     >
       <div className="card" key={country.name.common}>
         <img
-          src={country.flags.png}
+          src={country.flags.svg}
           alt={country.name.common}
           className="card-img-top"
         />
