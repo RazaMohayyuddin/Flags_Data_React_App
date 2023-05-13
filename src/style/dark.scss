@@ -3,6 +3,8 @@
 
     color: hsl(0, 0%, 100%);
 
+   
+
     .headerContainer {
         background-color: hsl(209, 23%, 22%);
 
@@ -21,6 +23,7 @@
 
     .home-container {
         background-color: hsl(207, 26%, 17%);
+       
     }
 
     .search {
@@ -60,10 +63,11 @@
         }
     }
 
+    
 
     .card {
         background-color: hsl(209, 23%, 22%);
-        color: hsl(0, 0%, 100%);
+       color: hsl(0, 0%, 100%); 
 
         h3 {
             color: hsl(0, 0%, 100%);
@@ -79,6 +83,7 @@
     .countryContainer {
         background-color: hsl(207, 26%, 17%);
         color: #999;
+        padding-bottom: 15rem;
 
 
         .backBtn {
