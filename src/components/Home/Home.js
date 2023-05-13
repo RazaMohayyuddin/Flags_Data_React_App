@@ -6,7 +6,6 @@ import CountryCardGrid from "../Cards/CountryCardGrid";
 const Home = () => {
   return (
     <section className="home-container">
-      {/* <Header /> */}
       <SearchFilter />
       <CountryCardGrid />
     </section>

@@ -30,7 +30,7 @@ const CountryCardGrid = () => {
   });
 
   return (
-    <div className="container">
+    <div className={filteredCountries.length===1 ? "container":"newContainer"}>
       {filteredCountries.map((country) => (
         <CountryCard key={country.cca3} country={country} />
       ))}

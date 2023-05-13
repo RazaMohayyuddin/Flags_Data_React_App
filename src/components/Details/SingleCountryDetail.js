@@ -1,3 +1,4 @@
+
 import React from "react";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import "./detail.scss";
@@ -6,7 +7,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const SingleCountryDetail = () => {
-  const data = useLocation();
+  const { state } = useLocation();
   const navigate = useNavigate();
 
   const [borderCountries, setBorderCountries] = useState([]);
@@ -14,7 +15,7 @@ const SingleCountryDetail = () => {
   useEffect(() => {
     async function getBorderCountries() {
       const borderCountriesData = await Promise.all(
-        data.state.borders.map((border) =>
+        state.borders.map((border) =>
           fetch(`https://restcountries.com/v3.1/alpha/${border}`).then((res) =>
             res.json()
           )
@@ -23,13 +24,13 @@ const SingleCountryDetail = () => {
       setBorderCountries(borderCountriesData);
     }
     getBorderCountries();
-  }, [data.state.borders]);
+  }, [state.borders]);
+
+  const { name, flags, population, region, subregion, capital, tld, currencies, languages } = state;
 
   return (
     <>
-    
       <div className="countryContainer">
-     
         <button className="backBtn" onClick={() => navigate("/")}>
           <MdOutlineKeyboardBackspace className="icon" />
           Back
@@ -37,19 +38,15 @@ const SingleCountryDetail = () => {
 
         <div className="countryDetails">
           <div className="countryFlag">
-            <img
-              src={data.state.flags.png}
-              alt="country"
-              className="countryFlagImage"
-            />
+            <img src={flags.png} alt="country" className="countryFlagImage" />
           </div>
           <div className="countryInfo">
-            <h2>{data.state.name.common}</h2>
+            <h2>{name.common}</h2>
             <div className="countryInfoDetails">
               <div className="countryInfoLeft">
                 <p className="">
                   <span>Native Name:</span>{" "}
-                  {Object.entries(data.state.name.nativeName)
+                  {Object.entries(name.nativeName)
                     .slice(0, 1)
                     .map(([key, value], index) => {
                       const nativeName = `${value.common}`;
@@ -58,31 +55,31 @@ const SingleCountryDetail = () => {
                 </p>
 
                 <p>
-                  <span>Population:</span> {data.state.population}
+                  <span>Population:</span> {population}
                 </p>
                 <p>
-                  <span>Region:</span> {data.state.region}
+                  <span>Region:</span> {region}
                 </p>
                 <p>
-                  <span>Sub Region:</span> {data.state.subregion}
+                  <span>Sub Region:</span> {subregion}
                 </p>
                 <p>
-                  <span>Capital:</span> {data.state.capital}
+                  <span>Capital:</span> {capital}
                 </p>
               </div>
               <div className="countryInfoRight">
                 <p>
-                  <span>Top Level Domain:</span> {data.state.tld}
+                  <span>Top Level Domain:</span> {tld}
                 </p>
                 <p>
                   <span>Currencies:</span>{" "}
-                  {Object.values(data.state.currencies)
+                  {Object.values(currencies)
                     .map((currency) => currency.name)
                     .join(", ")}
                 </p>
                 <p>
                   <span>Languages:</span>{" "}
-                  {Object.values(data.state.languages).sort().join(", ")}
+                  {Object.values(languages).sort().join(", ")}
                 </p>
               </div>
             </div>
@@ -108,14 +105,14 @@ const SingleCountryDetail = () => {
                         {border[0]?.name?.common}
                       </span>
                     </Link>
-                  ))}
-              </p>
+  ))}
+               </p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
+         </div>
+       </div>
     </>
-  );
-};
-
-export default SingleCountryDetail;
+    );
+  };
+  
+  export default SingleCountryDetail;

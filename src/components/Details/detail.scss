@@ -42,8 +42,8 @@
       margin-bottom: 2rem;
 
       .countryFlagImage {
-        width: 510px;
-        height: 320px;
+        width: 885px;
+        height: 500px;
         object-fit: cover;
         margin-bottom: 10rem;
         margin-right: 3.5rem;
@@ -58,7 +58,7 @@
       h2 {
         font-size: 16px;
         font-weight: bold;
-        margin-bottom: 1rem;
+        margin-bottom: -6rem;
         margin-top: 2rem;
         color: hsl(200, 15%, 8%);
       }
@@ -115,7 +115,7 @@
       }
 
       .countryBorder {
-        margin-bottom: 8rem;
+        margin-bottom: 12rem;
         margin-right: 10px;
 
         p {
@@ -158,28 +158,135 @@
   }
 }
 
-@media screen and (max-width:1550px)
-{
-  .countryContainer{
+@media screen and (max-width: 1801px) {
+  .countryContainer {
     width: 100%;
-    height:100%;
+    height: 100%;
     padding-top: 1.5rem;
     padding-bottom: 5rem;
-  }
-  
 
+    .countryDetails {
+      .countryFlag {
+        .countryFlagImage {
+          width: 725px;
+          height: 450px;
+        }
+      }
+      .countryInfo {
+        h2 {
+          font-size: 20px;
+        }
+        .countryInfoDetails {
+          .countryInfoLeft {
+            p {
+              font-size: 20px;
+              margin-top: -2.5rem;
+            }
+          }
+          .countryInfoRight {
+            p {
+              font-size: 20px;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1701px) {
+  .countryContainer {
+    width: 100%;
+    height: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+
+    .countryDetails {
+      .countryFlag {
+        .countryFlagImage {
+          width: 650px;
+          height: 400px;
+        }
+      }
+      .countryInfo {
+        h2 {
+          font-size: 20px;
+        }
+        .countryInfoDetails {
+          .countryInfoLeft {
+            p {
+              font-size: 20px;
+              margin-top: -2.5rem;
+            }
+          }
+          .countryInfoRight {
+            p {
+              font-size: 20px;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .countryContainer {
+    width: 100%;
+    height: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+
+    .countryDetails {
+      .countryFlag {
+        margin-bottom: 10rem;
+        .countryFlagImage {
+          width: 600px;
+          height: 380px;
+        }
+      }
+      .countryInfo {
+        h2 {
+          font-size: 16px;
+          padding-bottom: 8rem;
+        }
+        .countryInfoDetails {
+          .countryInfoLeft {
+            p {
+              font-size: 16px;
+              margin-top: 0.5rem;
+
+              padding-top: 0rem;
+            }
+          }
+          .countryInfoRight {
+            p {
+              font-size: 16px;
+              margin-top: 0.5rem;
+              padding-top: 0rem;
+            }
+          }
+        }
+        .countryBorder {
+          padding-top: 3rem;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1440px) {
-  .countryContainer{
+  .countryContainer {
     width: 100%;
-    height:100%;
+    height: 100%;
     padding-top: 1.5rem;
     padding-bottom: 5rem;
 
-    .countryDetails{
-      .countryFlag{
-        .countryFlagImage{
+    .countryDetails {
+      .countryFlag {
+        .countryFlagImage {
           width: 500px;
           height: 300px;
           object-fit: cover;
@@ -189,29 +296,45 @@
       }
     }
   }
-
-  
 }
 
-@media screen and (max-width:1280px){
-  .countryContainer{
+@media screen and (max-width: 1280px) {
+  .countryContainer {
     width: 100%;
-    height:100%;
+    height: 100%;
     padding-top: 1.5rem;
     padding-bottom: 5rem;
-    .backBtn{
+    .backBtn {
       margin-left: 3rem;
-      
     }
-    .countryDetails{
-      .countryFlag{
-        .countryFlagImage{
-          margin-left: 2rem;
+    .countryDetails {
+      .countryFlag {
+        .countryFlagImage {
+          margin-left: 3rem;
+        }
+      }
+      .countryInfo {
+        h2 {
+          padding-bottom: 2rem;
+        }
+        .countryInfoDetails {
+          .countryInfoLeft {
+            p {
+              font-size: 16px;
+              padding-top: 0.5rem;
+              //  margin-top: -2.5rem;
+            }
+          }
+          .countryInfoRight {
+            p {
+              font-size: 16px;
+              // margin-bottom: 1rem;
+            }
+          }
         }
       }
     }
   }
-  
 }
 @media screen and (max-width: 1024px) {
   .countryContainer {
@@ -223,11 +346,11 @@
 
     .countryDetails {
       .countryFlag {
-        margin-bottom: 1rem;
+        margin-bottom: 6.5rem;
 
         .countryFlagImage {
-          width: 430px;
-          height: 300px;
+          width: 450px;
+          height: 310px;
           object-fit: cover;
           margin-left: 1rem;
         }
@@ -236,18 +359,23 @@
       .countryInfo {
         h2 {
           font-size: 16px;
-          margin-top: 1rem;
-          margin-bottom: 1rem;
+          margin-top: 0rem;
+          margin-bottom: -1rem;
+          padding-top: 2rem;
           margin-left: 1rem;
         }
 
         .countryInfoDetails {
           .countryInfoLeft {
             margin-left: 1rem;
+            // padding-top: 0rem;
+            // padding-bottom: 0rem;
           }
 
           .countryInfoRight {
             margin-left: 1rem;
+            padding-top: 0rem;
+            // padding-bottom: -1rem;
           }
         }
 
@@ -282,13 +410,23 @@
 
       .countryFlag {
         margin-bottom: 1rem;
+       width: auto;
 
         .countryFlagImage {
-          width: 97%;
+          width: 820px;
           height: 80%;
           object-fit: cover;
-          margin-left: 0.5rem;
+          margin-left: 1rem;
           padding-top: 2rem;
+
+          @media screen and (max-width:821px)
+          {
+            width: 98%;
+            height: 100%;
+            object-fit: cover;
+            margin-left: 5.5rem;
+            padding-top: 5rem;
+          }
         }
       }
 
@@ -296,7 +434,7 @@
         margin-top: -4rem;
 
         h2 {
-          font-size: 16px;
+          font-size: 20px;
           margin-top: 1rem;
           margin-bottom: 1.5rem;
           margin-left: 1rem;
@@ -307,10 +445,12 @@
 
           .countryInfoLeft {
             margin-left: 1rem;
+            font-size: 20px;
           }
 
           .countryInfoRight {
             margin-left: 1rem;
+            font-size: 20px;
           }
         }
 
@@ -348,23 +488,70 @@
       .countryFlag {
         margin-top: 2rem;
         margin-bottom: -1rem;
+       padding-right :0rem ;
+        width: 728px;
+        @media screen and (max-width: 541px) {
+          width: 100%;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          margin-top: 0rem;
+          margin-bottom: 0rem;
+          padding-right: 0rem;
+          @media screen and (max-width: 414px){
+            width: 100%;
+            margin-left: 0rem;
+            margin-right: 0rem;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+            padding-right: 0rem;
+            @media screen and (max-width: 394px){
+              width: 100%;
+              margin-left: 0rem;
+              margin-right: 0rem;
+              margin-top: 0rem;
+              margin-bottom: 0rem;
+              padding-right: 0rem;
+              @media screen and (max-width: 376px){
+                width: 100%;
+                margin-left: 0rem;
+                margin-right: 0rem;
+                margin-top: 0rem;
+                margin-bottom: 0rem;
+                padding-right: 0rem;
+              }
+
+            }
+        
+          }
+        }
 
         .countryFlagImage {
           width: 100%;
-          height: 72%;
-          margin-left: -1rem;
+          height: 87%;
+          object-fit: cover;
+          margin-left: 3rem;
           @media screen and (max-width: 540px) {
-            width: 110%;
+            width: 500px;
+            margin-right: 1rem;
             margin-left: -1rem;
             @media screen and (max-width: 414px) {
-              margin-left: 1.5rem;
+              width:375px;
               @media screen and (max-width: 394px) {
-                margin-left: 3.5rem; 
+                margin-left: 5.5rem;
                 @media screen and (max-width: 376px) {
-                  margin-left: 3.5rem; 
+                  margin-left: -0.8rem;
+                  width: 335px;
+                  @media screen and (max-width: 361px) {
+                    margin-left: -0.8rem;
+                    width: 320px;
+                    @media screen and (max-width: 320px) {
+                      margin-left: -0.8rem;
+                      width: 335px;
+                    }
+                  }
+                 
                 }
               }
-             
             }
           }
         }
