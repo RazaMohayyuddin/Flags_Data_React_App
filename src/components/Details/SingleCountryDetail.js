@@ -2,15 +2,20 @@
 import React from "react";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import "./detail.scss";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation,useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 const SingleCountryDetail = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
 
   const [borderCountries, setBorderCountries] = useState([]);
+
+  const handleBack = () => {
+    navigate("/");
+    console.log("back");
+  };
+
 
   useEffect(() => {
     async function getBorderCountries() {
@@ -31,7 +36,7 @@ const SingleCountryDetail = () => {
   return (
     <>
       <div className="countryContainer">
-        <button className="backBtn" onClick={() => navigate("/")}>
+        <button className="backBtn" onClick={handleBack}>
           <MdOutlineKeyboardBackspace className="icon" />
           Back
         </button>
