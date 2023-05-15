@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import "./card.scss";
 
 const CountryCard = ({ country }) => {
+
   return (
+   
     <Link
       to={`/country/${country.name.common}`}
       state={country}
