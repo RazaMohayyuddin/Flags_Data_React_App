@@ -1,5 +1,8 @@
 .dropdown-container {
     position: relative;
+    margin-right: 6.5rem;
+    padding-top: 1rem;
+
 
 
     .dropdown-trigger {
@@ -41,7 +44,7 @@
         list-style: none;
         background-color: hsl(0, 0%, 100%);
         border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 4px rgba(56, 51, 51, 0.1);
 
     }
 
@@ -53,9 +56,48 @@
         cursor: pointer;
 
         &:hover {
-            background-color: hsl(0, 0%, 52%);
-            color: hsl(0, 0%, 100%);
+            background-color: hsl(0, 0%, 98%);
+            color: hsl(0, 0%, 52%);
 
         }
     }
 }
+
+
+@media screen and (max-width:1470px)
+{
+    .dropdown-container {
+        margin-right: 5rem;
+    }
+}
+
+@media screen and (max-width:1240px)
+{
+    .dropdown-container {
+        margin-right: 4rem;
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .dropdown-container {
+        margin-right: 6rem;
+        @media screen and (max-width:913px)
+        {
+            margin-right: 5rem;
+        }
+    }
+}
+
+@media screen and (max-width:821px)
+{
+    .dropdown-container {
+        margin-right: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-container {
+        margin-left: 1.3rem;
+    }
+}
+    

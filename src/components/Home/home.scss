@@ -1,5 +1,32 @@
 .home-container {
     background-color: hsl(0, 0%, 98%);
     height: max-content;
-    padding-bottom: 26rem;
+    padding-bottom: 28rem;
+    .homeSearchSection{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        // margin-top: 2.5rem;
+    }
+    .homeCards{
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .home-container {
+        padding-bottom: 0;
+        .homeSearchSection{
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content:center;
+            .homeCards{
+                margin-top: 2rem;
+            }
+        }
+    }
 }

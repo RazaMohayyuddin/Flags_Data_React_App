@@ -18,7 +18,7 @@ const CountryCard = ({ country }) => {
         />
         <div className="card-body">
           <h3>
-            <strong style={{ fontWeight: "bolder" }}>
+            <strong style={{ fontWeight: "800" }}>
               {country.name.common}
             </strong>
           </h3>
@@ -26,16 +26,18 @@ const CountryCard = ({ country }) => {
             <strong
               style={{
                 marginRight: "5px",
+                fontWeight: "600",
               }}
             >
               Population:
             </strong>
-            {country.population}
+            {country.population.toLocaleString()}
           </p>
           <p style={{ fontSize: "0.9rem" }}>
             <strong
               style={{
                 marginRight: "5px",
+                fontWeight: "600",
               }}
             >
               Region:
@@ -46,6 +48,7 @@ const CountryCard = ({ country }) => {
             <strong
               style={{
                 marginRight: "5px",
+                fontWeight: "600",
               }}
             >
               Capital:
