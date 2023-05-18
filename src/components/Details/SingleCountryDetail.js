@@ -42,9 +42,12 @@ const SingleCountryDetail = () => {
         </button>
 
         <div className="countryDetails">
+
           <div className="countryFlag">
+         
             <img src={flags.png} alt="country" className="countryFlagImage" />
-          </div>
+            </div>
+          
           <div className="countryInfo">
             <h2>{name.common}</h2>
             <div className="countryInfoDetails">
@@ -60,7 +63,7 @@ const SingleCountryDetail = () => {
                 </p>
 
                 <p>
-                  <span>Population:</span> {population}
+                  <span>Population:</span> {population.toLocaleString()}
                 </p>
                 <p>
                   <span>Region:</span> {region}

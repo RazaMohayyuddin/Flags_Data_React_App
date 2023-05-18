@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import "./search.scss";
 import { FilterContext } from "../../FilterContext/FilterContext";
-import CustomDropdown from "./DropDown";
+// import CustomDropdown from "./DropDown";
 
 const SearchFilter = () => {
   const { search, setSearch } = useContext(FilterContext);
@@ -21,9 +21,9 @@ const SearchFilter = () => {
         />
       </div>
 
-      <div className="select-container">
+      {/* <div className="select-container">
         <CustomDropdown />
-      </div>
+      </div> */}
     </div>
   );
 };

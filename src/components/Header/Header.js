@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
-import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
 import { DarkModeContext } from "../../StyleContext/darkModeContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon as solidMoon } from "@fortawesome/free-solid-svg-icons";
+import { faMoon as regularMoon } from "@fortawesome/free-regular-svg-icons";
+
 
 import "./header.scss";
 const Header = () => {
@@ -8,7 +11,9 @@ const Header = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <div className="headerContainer ">
+    <div className="headerContainer">
+
+<div className="headerdata">
       <h1>Where in the world?</h1>
 
       <span
@@ -16,13 +21,17 @@ const Header = () => {
         style={{ cursor: "pointer" }}
       >
         {darkMode ? (
-          <MdDarkMode className="icon" />
+          <FontAwesomeIcon icon={solidMoon} className="icon" />
          
         ) : (
-          <MdOutlineDarkMode className="icon" />
+       
+          <FontAwesomeIcon icon={regularMoon} className="icon" />
+          
+         
         )}
         {darkMode ? "Light Mode" : "Dark Mode"}
       </span>
+      </div>
     </div>
   );
 };
