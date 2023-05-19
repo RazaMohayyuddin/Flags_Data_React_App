@@ -16,6 +16,8 @@ const CountryCardGrid = () => {
     });
   }, []);
 
+  // Filter countries based on search and region
+
   const filteredCountries = countries.filter((country) => {
     if (
       search &&
@@ -29,7 +31,7 @@ const CountryCardGrid = () => {
       }
     }
     return true;
-  });
+  }); 
 
   return (
     <div>

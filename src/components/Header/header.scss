@@ -1,48 +1,47 @@
 .headerContainer {
   display: flex;
-  // justify-content: c;
+  
   align-items: center;
   height: 8vh;
   background-color: hsl(0, 0%, 100%);
-  // opacity: 99;
-  // z-index: 99;
-  // position: fixed;
-  // left: 0;
-  // right: 0;
-  // top: 0;
+  opacity: 99;
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   box-shadow: 0 2px 4px rgba(143, 134, 134, 0.1);
-  --webkit-box-shadow: 0 2px 4px rgba(143, 134, 134, 0.1);
-  --moz-box-shadow: 0 2px 4px rgba(143, 134, 134, 0.1);
+  transition: all 0.3s ease-in-out;
 
   .headerdata{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
   }
 
   h1 {
     font-size: 20px;
     font-weight: 800;
     color: hsl(200, 15%, 8%);
-    margin-left: 6.5rem;
+    // margin-left: 6.5rem;
 
 
-    @media screen and (max-width: 1250px) {
-      margin-left: 4rem;
+    // @media screen and (max-width: 1250px) {
+    //   margin-left: 4rem;
 
-      @media screen and (max-width: 1024px) {
-        margin-left: 5rem;
-      }
-    }
+    //   @media screen and (max-width: 1024px) {
+    //     margin-left: 5rem;
+    //   }
+    // }
   }
 
   span {
     font-size: 16px;
     font-weight: 600;
     color: hsl(200, 15%, 8%);
-    margin-right: 6.8rem ;
+    // margin-right: 6.8rem ;
 
     .icon {
       font-size: 16px;
@@ -51,43 +50,59 @@
     }
   }
 
-  @media screen and (max-width: 1470px) {
-    span {
-      margin-right: 4.5rem;
-    }
-  }
-
-    @media screen and (max-width: 1024px) {
-        span {
-        margin-right: 6rem;
-        @media screen and (max-width:913px)
-        {
-            margin-right: 5rem;
-        }
-        }
-    }
-
-  @media screen and (max-width: 821px) {
-    span {
-      margin-right: 4.5rem;
-    }
-  }
-
-  @media only screen and (max-width: 769px) {
-    flex-direction: row;
-
-    h1 {
-      margin-left: 1.3rem;
-      font-size: 14px;
-    }
-
-    span {
-      margin-right: 1.5rem;
-      font-size: 14px;
-
-      .icon {
-        font-size: 14px;
-      }
-    }
-  }
 }
+
+//   @media screen and (max-width:2510px)
+//   {
+//     span {
+//       margin-right: 10rem;
+//       @media (max-width:2100px){
+//         margin-right: 8.5rem;
+
+//         @media (max-width:1900px)
+//         {
+//           margin-right: 7rem;
+//         }
+//       }
+//     }
+//   }
+//   @media screen and (max-width: 1470px) {
+//     span {
+//       margin-right: 4.5rem;
+//     }
+//   }
+
+//     @media screen and (max-width: 1024px) {
+//         span {
+//         margin-right: 6rem;
+//         @media screen and (max-width:913px)
+//         {
+//             margin-right: 5rem;
+//         }
+//         }
+//     }
+
+//   @media screen and (max-width: 821px) {
+//     span {
+//       margin-right: 4.5rem;
+//     }
+//   }
+
+//   @media only screen and (max-width: 769px) {
+//     flex-direction: row;
+
+//     h1 {
+//       margin-left: 1.3rem;
+//       font-size: 14px;
+//     }
+
+//     span {
+//       margin-right: 1.5rem;
+//       font-size: 14px;
+
+//       .icon {
+//         font-size: 14px;
+//       }
+//     }
+//   }
+// }

@@ -3,18 +3,23 @@ import { DarkModeContext } from "../../StyleContext/darkModeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon as solidMoon } from "@fortawesome/free-solid-svg-icons";
 import { faMoon as regularMoon } from "@fortawesome/free-regular-svg-icons";
-
+import { useNavigate } from "react-router-dom";
 
 import "./header.scss";
 const Header = () => {
   const { dispatch } = useContext(DarkModeContext);
   const { darkMode } = useContext(DarkModeContext);
+  const navigate = useNavigate();
 
   return (
-    <div className="headerContainer">
+    <header>
+    
+    <div className="headerContainer main">
 
-<div className="headerdata">
-      <h1>Where in the world?</h1>
+      <div className="headerdata second">
+       
+      <h1 onClick={()=>navigate('/')} style={{cursor:'pointer'}}>Where in the world?</h1>
+      
 
       <span
         onClick={() => dispatch({ type: "TOGGLE" })}
@@ -33,6 +38,7 @@ const Header = () => {
       </span>
       </div>
     </div>
+    </header>
   );
 };
 

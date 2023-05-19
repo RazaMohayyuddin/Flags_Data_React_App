@@ -35,13 +35,15 @@ const SingleCountryDetail = () => {
 
   return (
     <>
-      <div className="countryContainer">
+      <section className="countryContainer  ">
+        <div className="BackButtonSpan" >
         <button className="backBtn" onClick={handleBack}>
           <MdOutlineKeyboardBackspace className="icon" />
           Back
         </button>
+        </div>
 
-        <div className="countryDetails">
+        <div className="countryDetails ">
 
           <div className="countryFlag">
          
@@ -118,7 +120,7 @@ const SingleCountryDetail = () => {
               </div>
             </div>
          </div>
-       </div>
+       </section>
     </>
     );
   };
