@@ -9,6 +9,8 @@ const CountryCard = ({ country }) => {
       to={`/country/${country.name.common}`}
       state={country}
       className="card-link"
+
+      style={{textDecoration: "none",padding:"0px",margin:"0px"}}
     >
       <div className="card" key={country.name.common}>
         <img
@@ -18,7 +20,7 @@ const CountryCard = ({ country }) => {
         />
         <div className="card-body">
           <h3>
-            <strong style={{ fontWeight: "800" }}>
+            <strong style={{ fontWeight: "800" }}> 
               {country.name.common}
             </strong>
           </h3>
