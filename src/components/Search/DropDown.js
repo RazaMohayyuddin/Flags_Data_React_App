@@ -4,10 +4,10 @@ import { FilterContext } from "../../FilterContext/FilterContext";
 import { FaAngleDown } from "react-icons/fa";
 
 function CustomDropdown() {
-  const { region, setRegion } = useContext(FilterContext);
-  const [isOpen, setIsOpen] = useState(false);
+  const { region, setRegion } = useContext(FilterContext); // region is used to check the state of region
+  const [isOpen, setIsOpen] = useState(false) // isOpen is used to check the state of dropdown menu;
 
-  const options = ["All", "Americas", "Asia", "Europe", "Oceania", "Africa"];
+  const options = ["All", "Americas", "Asia", "Europe", "Oceania", "Africa"]; // options for dropdown
 
   const handleSelect = (value) => {
     setRegion(value);

@@ -14,7 +14,7 @@ const CountryCardGrid = () => {
       setCountries(res.data);
       setLoading(false);
     });
-  }, []);
+  }, []); 
 
   // Filter countries based on search and region
 

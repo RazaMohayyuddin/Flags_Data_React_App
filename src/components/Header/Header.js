@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 
 import "./header.scss";
 const Header = () => {
-  const { dispatch } = useContext(DarkModeContext);
-  const { darkMode } = useContext(DarkModeContext);
+  const { dispatch } = useContext(DarkModeContext); // dispatch is used to change the state of darkMode
+  const { darkMode } = useContext(DarkModeContext); // darkMode is used to check the state of darkMode
   const navigate = useNavigate();
 
   return (
