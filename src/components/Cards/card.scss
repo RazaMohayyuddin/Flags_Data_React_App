@@ -94,7 +94,7 @@
 
 @media screen and (max-width: 1024px) {
   .container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 5em;
     .card{
       height: 380px;
@@ -105,6 +105,26 @@
     }
   }
 }
+
+@media screen and (max-width: 780px) {
+  .container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+  
+    
+    .card{
+      
+      height: 380px;
+      width: 100%;
+      img{
+        height: 50%;
+      }
+    }
+  }
+  
+}
+  
+
 
 @media screen and (max-width:540px){
   .container{
@@ -222,7 +242,6 @@
 
   @media screen and (max-width: 1441px) {
     grid-template-columns: repeat(4, 1fr);
-    // margin-bottom: 5rem;
     gap: 2rem;
 
     .card {
@@ -236,7 +255,7 @@
 
       img {
         width: 100%;
-        height: 44%;
+        height: 50%;
         object-fit: cover;
         border-radius: 0.5rem 0.5rem 0 0;
         box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);

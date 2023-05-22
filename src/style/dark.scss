@@ -24,9 +24,7 @@
     .home-container {
         background-color: hsl(207, 26%, 17%);
 
-        // .homeSearchSection{
-        //     margin-top: 5rem;
-        // }
+       
        
     }
 
@@ -76,7 +74,10 @@
         color: hsl(0, 0%, 100%);
         height: 120vh;
         padding-bottom: 2rem;
-        overflow-y: scroll;
+        @media screen and (max-width:769px)
+        {
+             overflow-y: scroll;
+        }
     }
     
 

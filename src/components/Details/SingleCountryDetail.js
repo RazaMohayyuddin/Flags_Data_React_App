@@ -10,6 +10,7 @@ const SingleCountryDetail = () => {
   const navigate = useNavigate();
 
   const [borderCountries, setBorderCountries] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const handleBack = () => {
     navigate("/");
@@ -27,6 +28,7 @@ const SingleCountryDetail = () => {
         )
       );
       setBorderCountries(borderCountriesData);
+      setLoading(false);
     }
     getBorderCountries();
   }, [state.borders]);
@@ -95,9 +97,13 @@ const SingleCountryDetail = () => {
             </div>
             <div className="countryBorder">
               <p>
-                {borderCountries.length > 0 && <span>Border Countries:</span>}
+              {loading ? (
+          <span>Loading...</span>
+        ) : (
+          borderCountries.length > 0 && <span>Border Countries:</span>
+        )}
 
-                {borderCountries
+                {!loading && borderCountries
                   .sort((a, b) =>
                     a[0]?.name?.common.localeCompare(b[0]?.name?.common)
                   )
