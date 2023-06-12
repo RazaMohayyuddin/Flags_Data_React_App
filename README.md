@@ -30,7 +30,7 @@ The API's used for this project took from [REST Countries API](https://restcount
 # Tests
 
 # Build Status / Errors
-Project is completed and there is no error in the project.
+Project is completed and there is no error in the functionality of project.
 # How to Use?
 This project is very simple to use just run project home page will appear to you where all countries are listed if you want to see specific country just go To search bar and start searching in it the list will automatically updated after that you can also filter countries by toggle on filters tag to filter countries in specific origin after search just click on country flag it will navigate you to detail page of that country.
 # Contribute
