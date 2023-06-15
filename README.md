@@ -14,7 +14,7 @@ Coding style used in this project is based on functional programming everything 
 # Features
 In this project home page list all countries flags also there is search filter and search countries in different continents by selecting any continent like Asia it will list all countries in this origin also implement Light and Dark Mode for better experience. There is also detail page which display detail of specific countries including borders,currency,language,domain,capital etc. 
 # How to Run?
-- Clone this repository by using "git clone "
+- Clone this repository by using "git clone https://github.com/RazaMohayyuddin/Flags_Data_React_App.git"
 - Run "npm install"
 - Run "npm start"
 
